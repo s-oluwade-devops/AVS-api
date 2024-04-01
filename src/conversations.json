@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Samuel Jackson",
+        "email": "samj@gmail.com",
+        "role": "Developer",
+        "telephone": "2045637711",
+        "nature_of_inquiry": "Technical Support",
+        "title": "Refund request for overage charges on EC2 free tier",
+        "message": "Good morning AWS support, I am writing this letter to appeal regarding my recent charges on EC2. I am currently utilizing AWS services as a student. Though I was informed about the charges on certain AWS services, I didn't realize that I was continuously being charged while the services were running. I would like to plead with you for a one time waiver of the charges. I have ensured that all running SERVICES have been stopped. \n\nI sincerely appreciate the SERVICES you provide and would be happy to resume utilizing them with better awareness. \nName of the Service: AWS EC2 Instances.\nTotal Amount: 158.00.\nTime Frame( in Days, Weeks and Months): Feb 28 to March 28",
+        "id": 2,
+        "thread_id": "1"
+    },
+    {
+        "name": "Samuel Jackson",
+        "email": "samj@gmail.com",
+        "role": "Developer",
+        "telephone": "2045637711",
+        "nature_of_inquiry": "Technical Support",
+        "title": "Refund request for overage charges on EC2 free tier",
+        "message": "No no no",
+        "id": 3,
+        "thread_id": "1"
+    },
+    {
+        "name": "Samuel Oluwade",
+        "email": "samueloluwade.dev@gmail.com",
+        "role": "it-professional",
+        "phone": "2045108062",
+        "inquiry": "general",
+        "title": "I need help",
+        "message": "Hi there, I'm just a lazy developer.",
+        "id": 3,
+        "thread_id": "as1t58wjtc"
+    }
+]
