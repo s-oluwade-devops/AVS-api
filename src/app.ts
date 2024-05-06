@@ -82,7 +82,7 @@ app.post('/conversations/:threadId', (req: Request, res: Response) => {
 });
 
 mongoose
-  .connect(process.env.MONGODB_CONNECTION_STRING!)
+  .connect(process.env.ME_CONFIG_MONGODB_URL!)
   .then(() => {
     console.log('connected to Mongo');
     app.listen(PORT, () => {

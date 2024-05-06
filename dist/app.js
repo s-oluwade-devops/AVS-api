@@ -24,21 +24,25 @@ app.use(express_1.default.json());
 app.use(express_1.default.static('public'));
 app.use((0, cors_1.default)());
 app.get('/', (req, res) => {
-    res.send('Hello World ' + process.env.MONGODB_CONNECTION_STRING);
+    res.send('Hello World ');
 });
 // get all conversations
-app.get('/conversations', (req, res) => {
-    const data = (0, fs_1.readFileSync)('src/conversations.json', 'utf8');
-    res.json(JSON.parse(data.toString()));
-});
+app.get('/conversations', (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    // const data = readFileSync('src/conversations.json', 'utf8');
+    // res.json(JSON.parse(data.toString()));
+    const conversations = yield conversation_1.default.find({}).exec();
+    // else get all products that match the query parameters
+    res.status(200).json(conversations);
+}));
 // gets a conversation thread
 app.get('/conversations/:threadId', (req, res) => {
-    const threadId = req.params.threadId;
-    const data = (0, fs_1.readFileSync)('src/conversations.json', 'utf8');
-    console.log(JSON.parse(data.toString()));
-    const filtered = JSON.parse(data.toString()).filter((item) => item.thread_id == threadId);
-    console.log(filtered);
-    res.json(filtered);
+    // const threadId = req.params.threadId;
+    // const data = readFileSync('src/conversations.json', 'utf8');
+    // console.log(JSON.parse(data.toString()));
+    // const filtered = JSON.parse(data.toString()).filter((item: any) => item.thread_id == threadId);
+    // console.log(filtered);
+    // res.json(filtered);
+    res.json(null);
 });
 // creates conversation under new thread
 // for now we are just going to create a new thread for every conversation
